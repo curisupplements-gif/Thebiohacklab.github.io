@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BioHack Lab</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#020202;color:#fff}
+.container{max-width:1200px;margin:auto;padding:20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-bottom:1px solid #111}
+nav a{color:#aaa;margin-left:25px;text-decoration:none;font-size:14px}
+nav a:hover{color:#fff}
+.hero{text-align:center;padding:120px 20px;background:radial-gradient(circle at top,rgba(255,255,255,.08),transparent 60%)}
+.hero h1{font-size:60px;font-weight:800;background:linear-gradient(90deg,#fff,#888);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{margin-top:20px;color:#aaa;font-size:18px}
+.btn{display:inline-block;margin-top:20px;padding:14px 26px;border-radius:12px;background:linear-gradient(135deg,#fff,#bbb);color:#000;font-weight:600;text-decoration:none}
+.section{padding:90px 0}
+.section-title{text-align:center;font-size:34px;margin-bottom:40px}
+.grid{display:grid;gap:25px}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:#0d0d0d;border:1px solid #1f1f1f;padding:25px;border-radius:18px;transition:.3s}
+.card:hover{transform:translateY(-8px);border-color:#444}
+.card h3{margin-bottom:10px}
+.card p{color:#aaa;font-size:14px;margin-bottom:10px}
+.price{font-weight:600;margin-bottom:10px}
+.badge{font-size:11px;color:#00ffcc;margin-bottom:8px;display:block}
+footer{border-top:1px solid #111;padding:40px 0;text-align:center;color:#777}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<nav>
+<h2>BioHack Lab</h2>
+<div>
+<a href="#products">Products</a>
+<a href="#stack">Stack</a>
+<a href="#protocol">Protocol</a>
+<a href="#science">Science</a>
+<a href="#guide">Guide</a>
+</div>
+</nav>
+
+<section class="hero">
+<h1>Build Your Ultimate Biohacking Stack</h1>
+<p>Science-backed supplements and protocols to maximize energy, focus, recovery, and longevity.</p>
+<a href="#products" class="btn">Shop My Stack</a>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="section">
+<h2 class="section-title">Top Products</h2>
+<div class="grid grid-3">
+
+<div class="card">
+<span class="badge">BEST SELLER</span>
+<h3>Methylene Blue</h3>
+<p>Boosts mitochondrial energy and brain function.</p>
+<div class="price">$29.99</div>
+<a href="https://amzn.to/4c2AvrP" target="_blank" class="btn">Buy Now</a>
+</div>
+
+<div class="card">
+<span class="badge">RECOVERY</span>
+<h3>Hydrogen Water Bottle</h3>
+<p>Reduces inflammation and speeds recovery.</p>
+<div class="price">$79.99</div>
+<a href="https://amzn.to/4c4G7Su" target="_blank" class="btn">Buy Now</a>
+</div>
+
+<div class="card">
+<span class="badge">FOCUS</span>
+<h3>Caffeine + L-Theanine</h3>
+<p>Clean energy without crashes.</p>
+<div class="price">$19.99</div>
+<a href="https://amzn.to/4sqvUGk" target="_blank" class="btn">Buy Now</a>
+</div>
+
+<div class="card">
+<span class="badge">SLEEP</span>
+<h3>Magnesium Glycinate</h3>
+<p>Deep sleep and nervous system recovery.</p>
+<div class="price">$24.99</div>
+<a href="https://www.amazon.com/s?k=magnesium+glycinate" target="_blank" class="btn">Buy Now</a>
+</div>
+
+<div class="card">
+<span class="badge">LONGEVITY</span>
+<h3>NMN</h3>
+<p>Supports NAD+ and cellular repair.</p>
+<div class="price">$59.99</div>
+<a href="https://www.amazon.com/s?k=nmn+supplement" target="_blank" class="btn">Buy Now</a>
+</div>
+
+<div class="card">
+<span class="badge">RECOVERY</span>
+<h3>Electrolytes</h3>
+<p>Hydration and performance boost.</p>
+<div class="price">$19.99</div>
+<a href="https://www.amazon.com/s?k=electrolytes+powder" target="_blank" class="btn">Buy Now</a>
+</div>
+
+</div>
+</section>
+
+<!-- STACK -->
+<section id="stack" class="section">
+<h2 class="section-title">My Daily Stack</h2>
+<div class="grid grid-3">
+<div class="card"><h3>Morning</h3><p>NMN, electrolytes, sunlight.</p></div>
+<div class="card"><h3>Focus</h3><p>Caffeine + L-theanine.</p></div>
+<div class="card"><h3>Night</h3><p>Magnesium + glycine.</p></div>
+</div>
+</section>
+
+<!-- PROTOCOL -->
+<section id="protocol" class="section">
+<h2 class="section-title">Daily Protocol</h2>
+<div class="grid grid-3">
+<div class="card"><h3>Morning</h3><p>Sunlight, hydration, cold exposure, movement.</p></div>
+<div class="card"><h3>Midday</h3><p>Deep work, nutrition, caffeine stack.</p></div>
+<div class="card"><h3>Night</h3><p>No screens, supplements, consistent sleep.</p></div>
+</div>
+</section>
+
+<!-- SCIENCE -->
+<section id="science" class="section">
+<h2 class="section-title">Science</h2>
+<div class="grid grid-3">
+<div class="card"><h3>Mitochondria</h3><p>Drive energy production and performance.</p></div>
+<div class="card"><h3>Sleep</h3><p>Key for recovery and hormone balance.</p></div>
+<div class="card"><h3>Longevity</h3><p>Target aging pathways and cellular health.</p></div>
+</div>
+</section>
+
+<!-- GUIDE -->
+<section id="guide" class="section">
+<h2 class="section-title">Beginner Guide</h2>
+<div class="grid grid-3">
+<div class="card"><h3>Step 1</h3><p>Fix sleep and hydration first.</p></div>
+<div class="card"><h3>Step 2</h3><p>Add foundational supplements.</p></div>
+<div class="card"><h3>Step 3</h3><p>Optimize performance stacks.</p></div>
+</div>
+</section>
+
+<section class="section" style="text-align:center">
+<h2>Join the Movement</h2>
+<p style="color:#aaa">Get weekly biohacking insights.</p>
+<a href="#" class="btn">Join Now</a>
+</section>
+
+<footer>
+<p>BioHack Lab — Built for peak performance.</p>
+<p>Not medical advice.</p>
+</footer>
+
+</div>
+</body>
+</html>
